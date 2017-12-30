@@ -10,7 +10,7 @@ RUN apt-get update && \
     apt-get install -y nodejs && \
     apt-get clean
 
-RUN git clone https://github.com/peckrob/collectd-unifi.git /opt/collectd-unifi && \
+RUN git clone https://github.com/dariks/collectd-unifi.git /opt/collectd-unifi && \
     cd /opt/collectd-unifi && npm install && \
     cp /opt/collectd-unifi/unifi.conf.sample /opt/collectd-unifi/unifi.conf
 
